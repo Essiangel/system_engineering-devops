@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+# This script prints "To infinity and beyond" every 2 seconds forever
 
-PID=$(pgrep -f "4-to_infinity_and_beyond")
-kill "$PID"
+while true
+do
+  echo "To infinity and beyond"
+  sleep 2
+done
