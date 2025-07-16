@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
-# This script prints "To infinity and beyond" every 2 seconds forever
+# This script kills the process running 4-to_infinity_and_beyond
 
-while true
-do
-  echo "To infinity and beyond"
-  sleep 2
-done
+pid=$(pgrep -f 4-to_infinity_and_beyond)
+kill "$pid"
