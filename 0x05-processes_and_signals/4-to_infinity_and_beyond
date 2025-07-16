@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
-# This script displays PID and name of processes containing "bash"while true
+# This script prints "To infinity and beyond" every 2 seconds forever
+
+while true
 do
   echo "To infinity and beyond"
   sleep 2
 done
-
