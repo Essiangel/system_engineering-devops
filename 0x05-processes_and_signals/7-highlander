@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
-# This script lists all running processes for all users
-ps -aux
+# This script prints "To infinity and beyond" forever and catches SIGTERM
+trap "echo I am invincible!!!" SIGTERM
+while true; do
+  echo "To infinity and beyond"
+  sleep 2
+done
