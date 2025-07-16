@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Function to catch the SIGTERM signal
 trap "echo I am invincible!!!" SIGTERM
