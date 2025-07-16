@@ -1,3 +1,10 @@
 #!/usr/bin/env bash
 # This script displays its own PID
-echo $$
+for pid in $(ls /proc | grep -E '^[0-9]+$'); do
+    if [ -f /proc/"$pid"/comm ]; then
+        name=$(cat /proc/"$pid"/comm)
+        if echo "$name" | grep -q "bash"; then
+            echo "$pid $name"
+        fi
+    fi
+done
