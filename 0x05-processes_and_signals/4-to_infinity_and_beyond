@@ -1,7 +1,2 @@
 #!/usr/bin/env bash
-
-while true
-do
-  echo "To infinity and beyond"
-  sleep 2
-done
+# This script displays PID and name of processes containing "bash"
